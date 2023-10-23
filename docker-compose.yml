@@ -1,0 +1,55 @@
+version: '3.4'
+services:
+  myweb:
+    build:
+      context: ./build/php
+      dockerfile: Dockerfile
+    container_name: myweb_php74
+    depends_on:
+      - mysqldb
+    hostname: myweb
+    ports:
+      - 9000:80
+    volumes:
+      - ./src:/var/www/html
+    environment:
+      MYSQL_HOST: myweb
+      MYSQL_USER: droot
+      MYSQL_PASSWORD: Pass123
+      MYSQL_DB: docker_db
+ 
+ 
+  mysqldb:
+    build:
+      context: ./build/mysql
+      dockerfile: Dockerfile
+    container_name: myweb_mysql
+    ports:
+      - 3307:3306
+    environment:
+      MYSQL_ROOT_PASSWORD: RootPass123
+      MYSQL_USER: droot
+      MYSQL_PASSWORD: Pass123
+      MYSQL_DATABASE: myweb_db
+    volumes:
+      - data:/var/lib/mysql
+
+  phpmyadmin:
+    image: phpmyadmin/phpmyadmin
+    container_name: myweb_phpmyadmin
+    depends_on:
+      - mysqldb
+    ports:
+      - 9001:80
+    environment:
+      PMA_ARBITRARY: 1
+      PMA_HOST: myweb
+      PMA_PORT: 3306
+      MYSQL_USER: droot
+      MYSQL_PASSWORD: Pass123
+      MYSQL_ROOT_PASSWORD: RootPass123
+      UPLOAD_LIMIT: 64M
+
+
+volumes:
+  data:
