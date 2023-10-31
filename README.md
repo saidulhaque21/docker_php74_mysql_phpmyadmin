@@ -21,9 +21,11 @@ First of all, pull this repository
 
 # Step 2: Change env file if you want   
 Then, go to docker_php74_mysql_phpmyadmin folder 
+```
 cd docker_php74_mysql_phpmyadmin
-
+```
 open file .env and cheange database user, pass, port etc if you want 
+
 ```
 # Source  DIRECTORY | you can locate anywhere your source code by changing this variable  
 APP_SOURCE_DIRECTORY=./src
@@ -41,9 +43,11 @@ MYSQL_PORT=3309
 PHPMYADMIN_PORT=7001
 ```
 
-# Step 3: Change env file if you want 
+# Step 3: Build Docker 
  After that, build this using following docker command 
- dokcer-compose up -d --build 
+```
+dokcer-compose up -d --build
+```
 Note:Your machine have to docker. If not, please install docker from: https://snapcraft.io/install/docker/ubuntu#install
 
 # Step 4: Enjoy 
