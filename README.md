@@ -53,6 +53,10 @@ Browse the application with URL: http://localhost:7000
 Which will show one record from database. 
 
 and for phpMyAdmin, Please browse: http://localhost:7001
+Insert Server: myweb82db
+**Username:** droot
+**Pasword:**  Pass123
+
 
 Thanks
  
