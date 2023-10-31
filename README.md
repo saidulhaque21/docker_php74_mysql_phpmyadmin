@@ -12,9 +12,7 @@ The key components of this Docker: **docker_php74_mysql_phpmyadmin** setup inclu
 
 **phpMyAdmin:** A web-based graphical interface for managing MySQL databases. It simplifies tasks related to database administration, allowing users to interact with MySQL databases visually.
 
-By encapsulating these components within Docker containers, this setup ensures portability, consistency, and ease of deployment. Developers can define and manage the entire environment via a docker-compose.yml file, simplifying setup across different machines and environments.
 
-This Dockerized application offers an efficient workflow for web development, facilitating the creation, testing, and deployment of PHP-based web applications while also providing a user-friendly interface, via phpMyAdmin, for database management and manipulation.
 
 # Step 1: Pull 
 First of all, pull this repository  
@@ -48,7 +46,7 @@ PHPMYADMIN_PORT=7001
 ```
 dokcer-compose up -d --build
 ```
-Note:Your machine have to docker. If not, please install docker from: https://snapcraft.io/install/docker/ubuntu#install
+**Note:** You must have Docker installed on your machine.  If not, please install docker from: https://snapcraft.io/install/docker/ubuntu#install
 
 # Step 4: Enjoy 
 Browse the application with URL: http://localhost:7000
