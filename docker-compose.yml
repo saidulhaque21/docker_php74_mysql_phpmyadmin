@@ -36,7 +36,7 @@ services:
       MYSQL_PASSWORD: ${MYSQL_PASSWORD}
       MYSQL_DATABASE: ${MYSQL_TEST_DATABASE}
     volumes:
-      - ./build/data:/var/lib/mysql #mysql data directory | if you docker down or stop or rebuild, mysql data will remain 
+      - ./data:/var/lib/mysql #mysql data directory | if you docker down or stop or rebuild, mysql data will remain 
     restart: always
     
   phpmyadmin:
