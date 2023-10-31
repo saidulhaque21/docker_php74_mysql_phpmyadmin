@@ -16,7 +16,7 @@
 
 <h1>Database Connection & Data: </h1>
 <?php
-    $conn = mysqli_connect('mysqldb', 'admin', 'Pass123', "myweb_db");
+    $conn = mysqli_connect('mysqldb', 'admin', 'Pass123', "docker_db");
     $query = 'SELECT * From contacts';
     $result = mysqli_query($conn, $query);
     ?>
