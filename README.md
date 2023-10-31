@@ -24,7 +24,8 @@ Then, go to docker_php74_mysql_phpmyadmin folder
 cd docker_php74_mysql_phpmyadmin
 
 open file .env and cheange database user, pass, port etc if you want 
-`# Source  DIRECTORY | you can locate anywhere your source code by changing this variable  
+```
+# Source  DIRECTORY | you can locate anywhere your source code by changing this variable  
 APP_SOURCE_DIRECTORY=./src
 
 # mysql default credentials || Change if you want as your requirement 
@@ -37,7 +38,8 @@ MYSQL_ROOT_PASSWORD=RootPass123
 # DEFAULT PORT - apache | MySQL | phpmyadmin || Change if you want as your requirement 
 HTTP_PORT=7000
 MYSQL_PORT=3309
-PHPMYADMIN_PORT=7001`
+PHPMYADMIN_PORT=7001
+```
 
 # Step 3: Change env file if you want 
  After that, build this using following docker command 
