@@ -4,13 +4,13 @@ A PHP Docker application integrating Apache, PHP 7.4, MySQL, and phpMyAdmin offe
 
 The key components of this Docker setup include:
 
-# Apache:  The web server that serves the PHP web pages. It handles requests and serves the PHP content to users over the internet.
+ Apache:  The web server that serves the PHP web pages. It handles requests and serves the PHP content to users over the internet.
 
-# PHP 7.4: The scripting language used for server-side web development. It works in conjunction with Apache to process and generate dynamic web content.
+PHP 7.4: The scripting language used for server-side web development. It works in conjunction with Apache to process and generate dynamic web content.
 
-# MySQL: A robust and popular relational database management system. It stores and manages the application's data, providing a reliable backend for various web applications.
+MySQL: A robust and popular relational database management system. It stores and manages the application's data, providing a reliable backend for various web applications.
 
-# phpMyAdmin: A web-based graphical interface for managing MySQL databases. It simplifies tasks related to database administration, allowing users to interact with MySQL databases visually.
+phpMyAdmin: A web-based graphical interface for managing MySQL databases. It simplifies tasks related to database administration, allowing users to interact with MySQL databases visually.
 
 By encapsulating these components within Docker containers, this setup ensures portability, consistency, and ease of deployment. Developers can define and manage the entire environment via a docker-compose.yml file, simplifying setup across different machines and environments.
 
