@@ -1,4 +1,4 @@
-# Docker:  docker_php74_mysql_phpmyadmin
+#  php74, mysql, and phpmyadmin in Docker
 PHP Docker Application: Apache, PHP 74, mysql and phpMyAdmin in docker!
 A PHP Docker application integrating Apache, PHP 7.4, MySQL, and phpMyAdmin offers a comprehensive environment for web development and database management within Docker containers. This setup enables a convenient and portable development environment, making it easier to deploy, manage, and scale web applications.
 
